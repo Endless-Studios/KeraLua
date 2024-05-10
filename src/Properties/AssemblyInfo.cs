@@ -1,17 +1,5 @@
 ﻿using System.Reflection;
 
-#if __MACOS__ || __TVOS__ || __WATCHOS__ || __IOS__
-
-using Foundation;
-
-#if NET
-[assembly: AssemblyMetadata ("IsTrimmable", "True")]
-#else
-[assembly: LinkerSafe]
-#endif
-
-#endif
-
 // Information about this assembly is defined by the following attributes. 
 // Change them to the values specific to your project.
 

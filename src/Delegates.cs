@@ -7,9 +7,6 @@ using lua_State = System.IntPtr;
 using size_t = System.UIntPtr;
 using voidptr_t = System.IntPtr;
 
-#if __IOS__ || __TVOS__ || __WATCHOS__ || __MACCATALYST__
-    using ObjCRuntime;
-#endif
 
 namespace KeraLua
 {

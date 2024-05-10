@@ -19,7 +19,7 @@
         <Message Text="Building Android Lua library (armeabi-v7a arm64-v8a x86 x86_64) [NDK: $(AndroidNdkHome)] " />
 
         <Error Text="******* Could not locate Android NDK. $(AndroidNdkHome)ndk-build ********** " Condition="!Exists ('$(AndroidNdkHome)')" />
-        <Exec Command="$(AndroidNdkHome)ndk-build" WorkingDirectory="$(ExternalLuaPath)\$(AndroidBuildDir)"/>
+        <Exec Command="C:\\Android\\android-ndk-r26c\\build\\ndk-build" WorkingDirectory="$(ExternalLuaPath)\$(AndroidBuildDir)"/>
         <MakeDir Directories="$(OutputRuntimeDir)\$(AndroidOutputDir)-$(Arch1)" />
         <MakeDir Directories="$(OutputRuntimeDir)\$(AndroidOutputDir)-$(Arch1)\native" />
         <MakeDir Directories="$(OutputRuntimeDir)\$(AndroidOutputDir)-$(Arch2)" />
